@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PureClean</title>
+    <script>
+      // GitHub Pages SPA fallback (github.com/rafgraph/spa-github-pages).
+      // Encodes the requested deep link into a query string and redirects
+      // to index.html, which decodes it back via history.replaceState
+      // before React Router mounts. pathSegmentsToKeep=1 preserves the
+      // "/pureclean/" project-pages base path segment.
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
