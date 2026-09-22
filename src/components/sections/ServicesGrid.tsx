@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
@@ -19,11 +20,10 @@ export function ServicesGrid({ showAll = false }: { showAll?: boolean }) {
 
         <div className="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {list.map((service, i) => (
-            <RouteButton
+            <Link
               key={service.slug}
               to={`/ypiresies/${service.slug}`}
-              variant="outline"
-              className="group flex h-full flex-col items-start gap-4 rounded-2xl border border-ink-100 bg-white p-7 text-left normal-case shadow-sm transition-all hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg"
+              className="group flex h-full flex-col items-start gap-4 rounded-2xl border border-ink-100 bg-white p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg"
               style={{ animationDelay: `${i * 0.05}s` }}
             >
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-700 transition-colors group-hover:bg-brand-600 group-hover:text-white">
@@ -39,7 +39,7 @@ export function ServicesGrid({ showAll = false }: { showAll?: boolean }) {
                 Μάθετε Περισσότερα
                 <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
               </span>
-            </RouteButton>
+            </Link>
           ))}
         </div>
 

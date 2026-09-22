@@ -78,11 +78,10 @@ export function ServiceDetail() {
           <h2 className="font-display text-2xl font-bold text-ink-900">Σχετικές Υπηρεσίες</h2>
           <div className="grid gap-6 sm:grid-cols-3">
             {related.map((r) => (
-              <RouteButton
+              <Link
                 key={r.slug}
                 to={`/ypiresies/${r.slug}`}
-                variant="outline"
-                className="group flex h-full flex-col items-start gap-3 rounded-2xl border border-ink-100 bg-white p-6 text-left normal-case shadow-sm hover:-translate-y-1 hover:shadow-lg"
+                className="group flex h-full flex-col items-start gap-3 rounded-2xl border border-ink-100 bg-white p-6 text-left shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
               >
                 <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-50 text-brand-700">
                   <ServiceIcon icon={r.icon} className="h-5 w-5" />
@@ -92,7 +91,7 @@ export function ServiceDetail() {
                   Δείτε Περισσότερα
                   <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                 </span>
-              </RouteButton>
+              </Link>
             ))}
           </div>
         </Container>
