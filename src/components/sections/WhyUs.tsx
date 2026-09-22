@@ -36,12 +36,12 @@ export function WhyUs() {
           </div>
         </div>
 
-        <div className="rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 p-6 shadow-2xl sm:p-8">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="aspect-4/5 w-full rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 p-6 shadow-2xl sm:p-8">
+          <div className="grid h-full grid-cols-2 grid-rows-2 gap-4">
             {highlightItems.map((item) => (
               <div
                 key={item.label}
-                className="flex flex-col items-center gap-3 rounded-2xl bg-white/10 p-5 text-center backdrop-blur-md"
+                className="flex flex-col items-center justify-center gap-3 rounded-2xl bg-white/10 p-5 text-center backdrop-blur-md"
               >
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/15 text-white">
                   <ServiceIcon icon={item.icon} className="h-5 w-5" />
