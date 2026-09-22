@@ -22,8 +22,9 @@ export const business = {
     "Χαλκιδική (κατόπιν συνεννόησης)",
   ],
   social: {
-    facebook: "https://facebook.com/",
-    instagram: "https://instagram.com/",
+    facebook: "https://www.facebook.com/profile.php?id=100030004026148",
+    instagram: "https://www.instagram.com/pure_clean_skg/",
+    tiktok: "https://www.tiktok.com/@pure_clean_skg",
   },
 };
 

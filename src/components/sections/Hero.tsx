@@ -34,9 +34,9 @@ export function Hero() {
           className="animate-fade-up font-display text-balance max-w-4xl text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
           style={{ animationDelay: "0.1s" }}
         >
-          Βιολογικοί Καθαρισμοί Στρωμάτων, Σαλονιών & Χαλιών στη{" "}
+          Βιολογικοί Καθαρισμοί Στρωμάτων, Σαλονιών &{" "}
           <span className="bg-gradient-to-r from-brand-300 to-amber-glow bg-clip-text text-transparent">
-            Νέα Μηχανιώνα
+            Χαλιών
           </span>
         </h1>
 

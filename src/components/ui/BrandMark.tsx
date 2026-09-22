@@ -1,24 +1,11 @@
-import pureCleanIcon from "../../assets/brand/pureclean-icon.png";
-import { business } from "../../data/site";
+import pureCleanLogo from "../../assets/brand/pureclean-logo.png";
 
-export function BrandMark({
-  textClassName = "text-ink-900",
-  size = "md",
-}: {
-  textClassName?: string;
-  size?: "sm" | "md";
-}) {
-  const badge = size === "sm" ? "h-9 w-9 p-1.5" : "h-11 w-11 p-2";
-  const text = size === "sm" ? "text-lg" : "text-xl";
+export function BrandMark({ size = "md" }: { size?: "sm" | "md" }) {
+  const height = size === "sm" ? "h-10" : "h-12";
 
   return (
-    <span className="flex items-center gap-2.5">
-      <span className={`flex shrink-0 items-center justify-center rounded-xl bg-white shadow-md shadow-ink-950/10 ring-1 ring-ink-950/5 ${badge}`}>
-        <img src={pureCleanIcon} alt="" className="h-full w-full object-contain" />
-      </span>
-      <span className={`font-display font-bold tracking-tight ${text} ${textClassName}`}>
-        {business.name}
-      </span>
+    <span className={`inline-flex items-center rounded-xl bg-white px-2 py-1.5 shadow-md shadow-ink-950/10 ring-1 ring-ink-950/5 ${height}`}>
+      <img src={pureCleanLogo} alt="PureClean" className="h-full w-auto object-contain" />
     </span>
   );
 }
