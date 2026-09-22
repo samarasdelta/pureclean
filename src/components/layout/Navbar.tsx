@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Menu, Phone, X } from "lucide-react";
 import { Container } from "../ui/Container";
 import { RouteButton } from "../ui/Button";
+import { BrandMark } from "../ui/BrandMark";
 import { business } from "../../data/site";
 
 const links = [
@@ -30,17 +31,8 @@ export function Navbar() {
       }`}
     >
       <Container className="flex h-18 items-center justify-between py-3">
-        <Link to="/" className="flex items-center gap-2.5">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-600 font-display text-lg font-bold text-white shadow-md shadow-brand-900/20">
-            PC
-          </span>
-          <span
-            className={`font-display text-xl font-bold tracking-tight ${
-              scrolled ? "text-ink-900" : "text-ink-900"
-            }`}
-          >
-            {business.name}
-          </span>
+        <Link to="/">
+          <BrandMark />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">

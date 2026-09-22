@@ -12,10 +12,10 @@ export function CtaBanner() {
           <PhoneCall className="h-6 w-6" />
         </span>
         <h2 className="font-display text-balance max-w-xl text-3xl font-bold text-white sm:text-4xl">
-          Χρειάζεστε άμεση εξυπηρέτηση;
+          Έτοιμοι να κλείσετε ραντεβού;
         </h2>
         <p className="max-w-lg text-balance text-brand-100/90">
-          Καλέστε μας τώρα για έκτακτα περιστατικά ή κλείστε ραντεβού online μέσα σε λίγα λεπτά.
+          Καλέστε μας τώρα για μια δωρεάν εκτίμηση ή κλείστε ραντεβού online μέσα σε λίγα λεπτά.
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row">
           <LinkButton href={business.phoneHref} variant="accent" size="lg">

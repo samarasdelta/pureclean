@@ -36,9 +36,6 @@ export function Contact() {
                 <a href={business.phoneHref} className="block text-sm text-ink-600 hover:text-brand-700">
                   {business.phoneDisplay}
                 </a>
-                <a href={business.mobileHref} className="block text-sm text-ink-600 hover:text-brand-700">
-                  {business.mobileDisplay}
-                </a>
               </div>
             </div>
 

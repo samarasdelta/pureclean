@@ -14,7 +14,7 @@ export function ServicesGrid({ showAll = false }: { showAll?: boolean }) {
         <SectionHeading
           eyebrow="Οι Υπηρεσίες μας"
           title="Ολοκληρωμένες λύσεις καθαρισμού"
-          description="Καλύπτουμε κάθε ανάγκη καθαρισμού βόθρων και βιολογικών συστημάτων, για κατοικίες και επιχειρήσεις."
+          description="Καλύπτουμε κάθε ανάγκη καθαρισμού στρωμάτων, επίπλωσης και χαλιών, για κατοικίες και επιχειρήσεις."
         />
 
         <div className="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3">

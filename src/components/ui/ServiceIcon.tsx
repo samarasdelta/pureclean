@@ -1,13 +1,14 @@
-import { Droplets, FlaskConical, Flame, Waves, CircleGauge, Truck, type LucideIcon } from "lucide-react";
+import { Leaf, Bed, Sofa, SwatchBook, Baby, Briefcase, SprayCan, type LucideIcon } from "lucide-react";
 import type { Service } from "../../data/site";
 
 const iconMap: Record<Service["icon"], LucideIcon> = {
-  septic: Droplets,
-  biological: FlaskConical,
-  grease: Flame,
-  drain: Waves,
-  tank: CircleGauge,
-  transport: Truck,
+  bio: Leaf,
+  mattress: Bed,
+  sofa: Sofa,
+  rug: SwatchBook,
+  kids: Baby,
+  office: Briefcase,
+  sanitize: SprayCan,
 };
 
 export function ServiceIcon({ icon, className = "h-6 w-6" }: { icon: Service["icon"]; className?: string }) {

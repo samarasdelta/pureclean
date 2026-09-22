@@ -1,7 +1,16 @@
 import { CheckCircle2 } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
+import { ServiceIcon } from "../ui/ServiceIcon";
 import { whyUs } from "../../data/site";
+import type { Service } from "../../data/site";
+
+const highlightItems: { icon: Service["icon"]; label: string }[] = [
+  { icon: "mattress", label: "Στρώματα" },
+  { icon: "sofa", label: "Σαλόνια" },
+  { icon: "rug", label: "Χαλιά - Μοκέτες" },
+  { icon: "kids", label: "Παιδικός Εξοπλισμός" },
+];
 
 export function WhyUs() {
   return (
@@ -27,20 +36,19 @@ export function WhyUs() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="aspect-4/5 w-full overflow-hidden rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 shadow-2xl">
-            <div className="bg-grid flex h-full w-full items-end p-10 opacity-90">
-              <div className="rounded-2xl bg-white/10 p-6 text-white backdrop-blur-md">
-                <p className="font-display text-2xl font-bold">24/7</p>
-                <p className="mt-1 text-sm text-white/80">
-                  Έκτακτη εξυπηρέτηση για επείγοντα περιστατικά, κάθε μέρα του χρόνου.
-                </p>
+        <div className="rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 p-6 shadow-2xl sm:p-8">
+          <div className="grid grid-cols-2 gap-4">
+            {highlightItems.map((item) => (
+              <div
+                key={item.label}
+                className="flex flex-col items-center gap-3 rounded-2xl bg-white/10 p-5 text-center backdrop-blur-md"
+              >
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/15 text-white">
+                  <ServiceIcon icon={item.icon} className="h-5 w-5" />
+                </span>
+                <span className="text-sm font-semibold text-white">{item.label}</span>
               </div>
-            </div>
-          </div>
-          <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-white p-5 shadow-xl sm:block">
-            <p className="font-display text-3xl font-extrabold text-brand-700">100%</p>
-            <p className="text-xs font-medium text-ink-600">Νόμιμη Διαδικασία</p>
+            ))}
           </div>
         </div>
       </Container>

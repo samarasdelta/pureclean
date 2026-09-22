@@ -34,7 +34,7 @@ export function Hero() {
           className="animate-fade-up font-display text-balance max-w-4xl text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
           style={{ animationDelay: "0.1s" }}
         >
-          Βιολογικοί Καθαρισμοί & Άδειασμα Βόθρων στη{" "}
+          Βιολογικοί Καθαρισμοί Στρωμάτων, Σαλονιών & Χαλιών στη{" "}
           <span className="bg-gradient-to-r from-brand-300 to-amber-glow bg-clip-text text-transparent">
             Νέα Μηχανιώνα
           </span>
@@ -44,8 +44,9 @@ export function Hero() {
           className="animate-fade-up max-w-2xl text-balance text-lg leading-relaxed text-ink-100/80 sm:text-xl"
           style={{ animationDelay: "0.2s" }}
         >
-          Εξειδικευμένες υπηρεσίες καθαρισμού βόθρων, βιολογικών συστημάτων και λιποσυλλεκτών
-          σε όλη τη Θεσσαλονίκη. Γρήγορη ανταπόκριση, σύγχρονος εξοπλισμός, καθαρή δουλειά.
+          Καθαρισμός στρωμάτων, σαλονιών, χαλιών & μοκετών, παιδικού εξοπλισμού και
+          καθισμάτων γραφείου σε όλη τη Θεσσαλονίκη. Βιολογικά προϊόντα, σύγχρονος
+          εξοπλισμός, καθαρή δουλειά.
         </p>
 
         <div

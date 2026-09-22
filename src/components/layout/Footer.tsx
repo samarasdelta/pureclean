@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Container } from "../ui/Container";
 import { FacebookIcon, InstagramIcon } from "../ui/SocialIcons";
+import { BrandMark } from "../ui/BrandMark";
 import { business, services } from "../../data/site";
 
 export function Footer() {
@@ -9,15 +10,12 @@ export function Footer() {
     <footer className="bg-ink-950 text-ink-100">
       <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-4">
-          <Link to="/" className="flex items-center gap-2.5">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-600 font-display text-lg font-bold text-white">
-              PC
-            </span>
-            <span className="font-display text-xl font-bold text-white">{business.name}</span>
+          <Link to="/">
+            <BrandMark textClassName="text-white" size="sm" />
           </Link>
           <p className="text-sm leading-relaxed text-ink-100/70">
-            Βιολογικοί καθαρισμοί, άδειασμα βόθρων και συναφείς υπηρεσίες στη Νέα Μηχανιώνα
-            και σε όλη τη Θεσσαλονίκη.
+            Βιολογικοί καθαρισμοί στρωμάτων, σαλονιών, χαλιών & μοκετών και συναφείς
+            υπηρεσίες στη Νέα Μηχανιώνα και σε όλη τη Θεσσαλονίκη.
           </p>
           <div className="flex gap-3 pt-2">
             <a
