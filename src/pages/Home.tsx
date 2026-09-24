@@ -1,5 +1,6 @@
 import { Hero } from "../components/sections/Hero";
 import { StatsBar } from "../components/sections/StatsBar";
+import { LogoDivider } from "../components/sections/LogoDivider";
 import { ServicesGrid } from "../components/sections/ServicesGrid";
 import { WhyUs } from "../components/sections/WhyUs";
 import { Process } from "../components/sections/Process";
@@ -12,6 +13,7 @@ export function Home() {
     <>
       <Hero />
       <StatsBar />
+      <LogoDivider />
       <ServicesGrid />
       <WhyUs />
       <Process />

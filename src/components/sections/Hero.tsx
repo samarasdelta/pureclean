@@ -2,7 +2,6 @@ import { ShieldCheck, Clock3, Leaf, ArrowRight, Phone } from "lucide-react";
 import { Container } from "../ui/Container";
 import { RouteButton, LinkButton } from "../ui/Button";
 import { business } from "../../data/site";
-import pureCleanLogo from "../../assets/brand/pureclean-logo.png";
 
 const badges = [
   { icon: ShieldCheck, label: "Αδειοδοτημένη Εταιρεία" },
@@ -31,20 +30,13 @@ export function Hero() {
           ))}
         </div>
 
-        <div
-          className="animate-fade-up inline-flex items-center rounded-3xl bg-white px-8 py-5 shadow-2xl sm:px-10 sm:py-6"
-          style={{ animationDelay: "0.1s" }}
-        >
-          <img src={pureCleanLogo} alt="PureClean" className="h-16 w-auto sm:h-20 lg:h-24" />
-        </div>
-
         <h1
           className="animate-fade-up font-display text-balance max-w-4xl text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
-          style={{ animationDelay: "0.15s" }}
+          style={{ animationDelay: "0.1s" }}
         >
-          Βιολογικοί{" "}
+          Βιολογικοί Καθαρισμοί Στρωμάτων, Σαλονιών &{" "}
           <span className="bg-gradient-to-r from-brand-300 to-amber-glow bg-clip-text text-transparent">
-            Καθαρισμοί
+            Χαλιών
           </span>
         </h1>
 
