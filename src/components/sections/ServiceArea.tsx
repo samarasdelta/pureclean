@@ -9,7 +9,7 @@ export function ServiceArea() {
       <Container className="flex flex-col items-center gap-12">
         <SectionHeading
           eyebrow="Περιοχή Εξυπηρέτησης"
-          title="Καλύπτουμε τη Νέα Μηχανιώνα και όλη τη Θεσσαλονίκη"
+          title="Καλύπτουμε όλη τη Θεσσαλονίκη και τη Νέα Μηχανιώνα"
           description="Εξυπηρετούμε γρήγορα κατοικίες και επιχειρήσεις σε ολόκληρο τον νομό."
         />
         <div className="flex flex-wrap justify-center gap-3">
