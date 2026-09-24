@@ -73,22 +73,3 @@ body {
 .text-balance {
   text-wrap: balance;
 }
-
-/* Pin TikTok's injected embed to our fixed card size. Its script sets
-   inline width/height on the embed and iframe (including after the
-   iframe finishes loading), so only an !important rule keeps it from
-   growing back to TikTok's own default size post-load. */
-.tiktok-card {
-  position: relative;
-}
-
-.tiktok-card .tiktok-embed,
-.tiktok-card iframe {
-  width: 100% !important;
-  height: 100% !important;
-  min-width: 0 !important;
-  max-width: none !important;
-  min-height: 0 !important;
-  max-height: none !important;
-  border: 0 !important;
-}

@@ -39,23 +39,22 @@ export function TikTokShowcase() {
 
         <div className="flex w-full flex-wrap justify-center gap-6">
           {videos.map((id) => (
-            <div key={id} className="tiktok-card h-[560px] w-[240px] overflow-hidden rounded-2xl">
-              <blockquote
-                className="tiktok-embed"
-                cite={`https://www.tiktok.com/@pure_clean_skg/video/${id}`}
-                data-video-id={id}
-              >
-                <section>
-                  <a
-                    href={`https://www.tiktok.com/@pure_clean_skg/video/${id}`}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    @pure_clean_skg
-                  </a>
-                </section>
-              </blockquote>
-            </div>
+            <blockquote
+              key={id}
+              className="tiktok-embed"
+              cite={`https://www.tiktok.com/@pure_clean_skg/video/${id}`}
+              data-video-id={id}
+            >
+              <section>
+                <a
+                  href={`https://www.tiktok.com/@pure_clean_skg/video/${id}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  @pure_clean_skg
+                </a>
+              </section>
+            </blockquote>
           ))}
         </div>
       </Container>
