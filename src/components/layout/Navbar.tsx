@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Container } from "../ui/Container";
 import { RouteButton } from "../ui/Button";
 import { BrandMark } from "../ui/BrandMark";
@@ -91,13 +91,17 @@ export function Navbar() {
                 {link.label}
               </NavLink>
             ))}
-            <a
-              href={business.phoneHref}
-              className="mt-2 flex items-center gap-2 rounded-lg bg-brand-50 px-3 py-3 text-sm font-bold text-brand-700"
-            >
-              <Phone className="h-4 w-4" />
-              {business.phoneDisplay}
-            </a>
+            <div className="mt-2 flex items-center gap-5 px-3 py-2 text-ink-500">
+              <a href={business.social.tiktok} target="_blank" rel="noreferrer" aria-label="TikTok" className="transition hover:text-brand-600">
+                <TikTokIcon className="h-5 w-5" />
+              </a>
+              <a href={business.social.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="transition hover:text-brand-600">
+                <InstagramIcon className="h-5 w-5" />
+              </a>
+              <a href={business.social.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" className="transition hover:text-brand-600">
+                <FacebookIcon className="h-5 w-5" />
+              </a>
+            </div>
           </Container>
         </div>
       )}
