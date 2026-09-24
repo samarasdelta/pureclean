@@ -19,13 +19,13 @@ export function Footer() {
           </p>
           <div className="flex gap-3 pt-2">
             <a
-              href={business.social.facebook}
+              href={business.social.tiktok}
               target="_blank"
               rel="noreferrer"
               className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition hover:bg-brand-600"
-              aria-label="Facebook"
+              aria-label="TikTok"
             >
-              <FacebookIcon className="h-4 w-4" />
+              <TikTokIcon className="h-4 w-4" />
             </a>
             <a
               href={business.social.instagram}
@@ -37,13 +37,13 @@ export function Footer() {
               <InstagramIcon className="h-4 w-4" />
             </a>
             <a
-              href={business.social.tiktok}
+              href={business.social.facebook}
               target="_blank"
               rel="noreferrer"
               className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition hover:bg-brand-600"
-              aria-label="TikTok"
+              aria-label="Facebook"
             >
-              <TikTokIcon className="h-4 w-4" />
+              <FacebookIcon className="h-4 w-4" />
             </a>
           </div>
         </div>

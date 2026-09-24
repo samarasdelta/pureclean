@@ -4,6 +4,7 @@ import { Menu, Phone, X } from "lucide-react";
 import { Container } from "../ui/Container";
 import { RouteButton } from "../ui/Button";
 import { BrandMark } from "../ui/BrandMark";
+import { FacebookIcon, InstagramIcon, TikTokIcon } from "../ui/SocialIcons";
 import { business } from "../../data/site";
 
 const links = [
@@ -51,14 +52,18 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href={business.phoneHref}
-            className="flex items-center gap-2 text-sm font-bold text-ink-900 hover:text-brand-600"
-          >
-            <Phone className="h-4 w-4" />
-            {business.phoneDisplay}
-          </a>
+        <div className="hidden items-center gap-5 lg:flex">
+          <div className="flex items-center gap-3.5 text-ink-500">
+            <a href={business.social.tiktok} target="_blank" rel="noreferrer" aria-label="TikTok" className="transition hover:text-brand-600">
+              <TikTokIcon className="h-4 w-4" />
+            </a>
+            <a href={business.social.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="transition hover:text-brand-600">
+              <InstagramIcon className="h-4 w-4" />
+            </a>
+            <a href={business.social.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" className="transition hover:text-brand-600">
+              <FacebookIcon className="h-4 w-4" />
+            </a>
+          </div>
           <RouteButton to="/epikoinonia" size="sm">
             Ζητήστε Προσφορά
           </RouteButton>
