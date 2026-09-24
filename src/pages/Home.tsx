@@ -6,7 +6,6 @@ import { WhyUs } from "../components/sections/WhyUs";
 import { Process } from "../components/sections/Process";
 import { ServiceArea } from "../components/sections/ServiceArea";
 import { TikTokShowcase } from "../components/sections/TikTokShowcase";
-import { Testimonials } from "../components/sections/Testimonials";
 import { CtaBanner } from "../components/sections/CtaBanner";
 
 export function Home() {
@@ -20,7 +19,6 @@ export function Home() {
       <Process />
       <ServiceArea />
       <TikTokShowcase />
-      <Testimonials />
       <CtaBanner />
     </>
   );
