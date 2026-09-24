@@ -37,14 +37,14 @@ export function TikTokShowcase() {
           <ArrowUpRight className="h-5 w-5 text-ink-400 transition group-hover:text-brand-600" />
         </a>
 
-        <div className="grid w-full gap-6 sm:grid-cols-3">
+        <div className="flex w-full flex-wrap justify-center gap-6">
           {videos.map((id) => (
             <blockquote
               key={id}
-              className="tiktok-embed mx-auto w-full"
+              className="tiktok-embed"
               cite={`https://www.tiktok.com/@pure_clean_skg/video/${id}`}
               data-video-id={id}
-              style={{ maxWidth: "100%", minWidth: 0 }}
+              style={{ maxWidth: "325px", minWidth: "325px" }}
             >
               <section>
                 <a
