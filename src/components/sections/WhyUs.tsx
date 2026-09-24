@@ -36,8 +36,8 @@ export function WhyUs() {
           </div>
         </div>
 
-        <div className="aspect-4/5 w-full rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 p-8 shadow-2xl sm:p-10">
-          <div className="flex h-full flex-col justify-center divide-y divide-white/15">
+        <div className="w-full rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 p-8 shadow-2xl sm:p-10">
+          <div className="flex flex-col justify-center divide-y divide-white/15">
             {highlightItems.map((item) => (
               <div key={item.label} className="flex items-center gap-4 py-5 first:pt-0 last:pb-0">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15 text-white">
