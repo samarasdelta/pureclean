@@ -8,7 +8,7 @@ export function StatsBar() {
         <div className="grid grid-cols-2 gap-6 rounded-3xl border border-ink-100 bg-white p-8 shadow-sm sm:grid-cols-4 sm:p-10">
           {stats.map((stat) => (
             <div key={stat.label} className="flex flex-col items-center gap-1 text-center">
-              <span className="font-display text-3xl font-extrabold text-brand-700 sm:text-4xl">
+              <span className="font-display text-2xl leading-tight font-extrabold text-brand-700 sm:text-3xl">
                 {stat.value}
               </span>
               <span className="text-sm font-medium text-ink-600">{stat.label}</span>

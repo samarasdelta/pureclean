@@ -1,8 +1,9 @@
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ShieldCheck } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { ServiceIcon } from "../ui/ServiceIcon";
-import { whyUs } from "../../data/site";
+import { LinkButton } from "../ui/Button";
+import { business, whyUs } from "../../data/site";
 import type { Service } from "../../data/site";
 
 const highlightItems: { icon: Service["icon"]; label: string }[] = [
@@ -20,8 +21,8 @@ export function WhyUs() {
           <SectionHeading
             align="left"
             eyebrow="Γιατί Εμάς"
-            title="15+ χρόνια εμπειρίας στην υπηρεσία σας"
-            description="Η φήμη μας χτίστηκε πάνω στη συνέπεια, την ταχύτητα και τον σεβασμό στον χώρο σας. Δείτε γιατί εκατοντάδες νοικοκυριά και επιχειρήσεις μας εμπιστεύονται."
+            title={`Από το ${business.foundedYear} στην υπηρεσία σας`}
+            description={`Η επιχείρηση ${business.name} του ${business.owner} εδρεύει στη Θεσσαλονίκη από το ${business.foundedYear}. Αναλαμβάνουμε κάθε είδους βιολογικό καθαρισμό σαλονιών, στρωμάτων, χαλιών, μοκετών, παιδικού εξοπλισμού και καθισμάτων γραφείου ή αυτοκινήτου, με στόχο να αναβαθμίζουμε την ποιότητα ζωής των πελατών μας.`}
           />
           <div className="grid gap-5 sm:grid-cols-2">
             {whyUs.map((item) => (
@@ -33,6 +34,27 @@ export function WhyUs() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="flex flex-col items-start gap-4 rounded-2xl border border-ink-100 bg-ink-50 p-5 sm:flex-row sm:items-center">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+              <ShieldCheck className="h-5 w-5" />
+            </span>
+            <div className="flex-1">
+              <p className="font-display font-bold text-ink-900">Πιστοποίηση TÜV AUSTRIA</p>
+              <p className="mt-0.5 text-sm text-ink-600">
+                Οι υπηρεσίες μας φέρουν την επίσημη πιστοποίηση της TÜV AUSTRIA.
+              </p>
+            </div>
+            <LinkButton
+              href={business.certificationUrl}
+              target="_blank"
+              rel="noreferrer"
+              variant="outline"
+              size="sm"
+            >
+              Πιστοποίηση
+            </LinkButton>
           </div>
         </div>
 

@@ -4,11 +4,14 @@
 export const business = {
   name: "PureClean",
   legalName: "PureClean Βιολογικοί Καθαρισμοί",
+  owner: "Παναγιώτης Τζάτζος",
+  foundedYear: 2018,
   tagline: "Βιολογικοί καθαρισμοί & καθαρισμοί επίπλωσης με συνέπεια, χωρίς κόπο για εσάς",
   phoneDisplay: "6997 047 852",
   phoneHref: "tel:+306997047852",
   email: "info@pureclean.gr",
   address: "Νέα Μηχανιώνα, Θεσσαλονίκη, Τ.Κ. 570 04",
+  certificationUrl: "https://reseller-content.4ty.gr/site2/maria/tzotzas/p1.pdf",
   hoursWeekdays: "Δευτέρα – Παρασκευή: 07:00 – 21:00",
   hoursWeekend: "Σάββατο: 08:00 – 15:00",
   areasServed: [
@@ -215,8 +218,8 @@ export const testimonials = [
 ];
 
 export const stats = [
-  { value: "15+", label: "Χρόνια Εμπειρίας" },
-  { value: "3.000+", label: "Ολοκληρωμένες Εργασίες" },
+  { value: "2018", label: "Έτος Ίδρυσης" },
+  { value: "TÜV AUSTRIA", label: "Πιστοποιημένες Υπηρεσίες" },
   { value: "7", label: "Υπηρεσίες Καθαρισμού" },
   { value: "100%", label: "Βιολογικά Προϊόντα" },
 ];
