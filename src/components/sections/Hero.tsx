@@ -17,7 +17,7 @@ export function Hero() {
       <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-500/30 blur-3xl" />
       <div className="absolute -bottom-40 left-1/3 h-96 w-96 rounded-full bg-amber-glow/10 blur-3xl" />
 
-      <Container className="relative flex flex-col items-center gap-10 py-24 text-center sm:py-32 lg:py-36">
+      <Container className="relative flex flex-col items-center gap-10 pt-12 pb-24 text-center sm:pt-16 sm:pb-32 lg:pt-18 lg:pb-36">
         <div className="animate-fade-up flex flex-wrap items-center justify-center gap-3">
           {badges.map(({ icon: Icon, label }) => (
             <span
