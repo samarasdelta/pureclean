@@ -10,6 +10,13 @@ const videos = [
   "7627977483467410710",
 ];
 
+// TikTok's embed script replaces the blockquote with its own fixed-size
+// iframe (ignoring our width styles), so shrink it visually with a scale
+// transform instead, reserving the already-scaled footprint in the layout.
+const NATIVE_WIDTH = 325;
+const NATIVE_HEIGHT = 780;
+const SCALE = 0.65;
+
 export function TikTokShowcase() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -39,23 +46,30 @@ export function TikTokShowcase() {
 
         <div className="flex w-full flex-wrap justify-center gap-6">
           {videos.map((id) => (
-            <blockquote
+            <div
               key={id}
-              className="tiktok-embed"
-              cite={`https://www.tiktok.com/@pure_clean_skg/video/${id}`}
-              data-video-id={id}
-              style={{ maxWidth: "325px", minWidth: "325px" }}
+              className="overflow-hidden rounded-2xl"
+              style={{ width: NATIVE_WIDTH * SCALE, height: NATIVE_HEIGHT * SCALE }}
             >
-              <section>
-                <a
-                  href={`https://www.tiktok.com/@pure_clean_skg/video/${id}`}
-                  target="_blank"
-                  rel="noreferrer"
+              <div style={{ width: NATIVE_WIDTH, transform: `scale(${SCALE})`, transformOrigin: "top left" }}>
+                <blockquote
+                  className="tiktok-embed"
+                  cite={`https://www.tiktok.com/@pure_clean_skg/video/${id}`}
+                  data-video-id={id}
+                  style={{ maxWidth: `${NATIVE_WIDTH}px`, minWidth: `${NATIVE_WIDTH}px` }}
                 >
-                  @pure_clean_skg
-                </a>
-              </section>
-            </blockquote>
+                  <section>
+                    <a
+                      href={`https://www.tiktok.com/@pure_clean_skg/video/${id}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      @pure_clean_skg
+                    </a>
+                  </section>
+                </blockquote>
+              </div>
+            </div>
           ))}
         </div>
       </Container>
